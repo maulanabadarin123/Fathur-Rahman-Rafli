@@ -38,7 +38,6 @@
         <div class="font-semibold text-lg tracking-tight">
           Fathur Rahman Rafli
         </div>
-        <!-- desktop nav -->
         <nav class="hidden md:flex items-center gap-7 text-sm font-medium">
           <a href="#hero" class="nav-link active">Beranda</a>
           <a href="#about" class="nav-link">Tentang</a>
@@ -47,7 +46,6 @@
           <a href="#experience" class="nav-link">Organisasi</a>
           <a href="#contact" class="nav-link">Kontak</a>
         </nav>
-        <!-- mobile toggle -->
         <button
           class="mobile-menu-btn md:hidden"
           id="menuToggle"
@@ -56,7 +54,6 @@
           <span></span><span></span><span></span>
         </button>
       </div>
-      <!-- mobile menu -->
       <div class="mobile-menu md:hidden" id="mobileMenu">
         <a href="#hero" class="nav-link-mobile">Beranda</a>
         <a href="#about" class="nav-link-mobile">Tentang</a>
@@ -68,51 +65,64 @@
     </header>
 
     <main>
-      <!-- HERO -->
+      <!-- HERO dengan foto placeholder -->
       <section
         id="hero"
         class="pt-28 md:pt-36 pb-12 md:pb-20 container-custom fade-section"
       >
-        <div class="max-w-4xl">
-          <div
-            class="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm font-medium uppercase tracking-wider text-[#4a4a4a] mb-4"
-          >
-            <span>Lumajang, Indonesia</span>
-            <span class="text-[#b0b0b0]">—</span>
-            <span>Information Systems</span>
+        <div class="flex flex-col md:flex-row md:items-center gap-8 md:gap-12">
+          <div class="flex-1">
+            <div
+              class="flex flex-wrap items-baseline gap-x-2 gap-y-1 text-sm font-medium uppercase tracking-wider text-[#4a4a4a] mb-4"
+            >
+              <span>Lumajang, Jawa Timur, Indonesia</span>
+              <span class="text-[#b0b0b0]">—</span>
+              <span>Information Systems</span>
+            </div>
+            <h1 class="hero-name">Fathur Rahman Rafli</h1>
+            <div class="w-16 h-0.5 bg-[#1e1e1e] mt-4 mb-5"></div>
+            <p class="hero-sub text-balance max-w-2xl">
+              Information Systems Graduate —
+              <span class="font-medium"
+                >Turning business processes into structured digital
+                solutions.</span
+              >
+            </p>
+            <p class="mt-4 text-[#3f3f3f] max-w-xl text-base leading-relaxed">
+              Fresh graduate dengan pemahaman Project Management, pengembangan
+              &amp; pengujian sistem, administrasi proyek, dan analisis
+              kebutuhan.
+            </p>
+            <div class="mt-8 flex flex-wrap gap-4">
+              <a href="#projects" class="btn-primary">Lihat Portofolio</a>
+              <a href="#contact" class="btn-outline">Hubungi Saya</a>
+            </div>
+            <div
+              class="mt-9 flex flex-wrap gap-6 text-xs font-medium text-[#4a4a4a] tracking-wide"
+            >
+              <span class="flex items-center gap-2"
+                ><span class="w-1.5 h-1.5 bg-[#1e1e1e] rounded-full"></span
+                >System Analysis</span
+              >
+              <span class="flex items-center gap-2"
+                ><span class="w-1.5 h-1.5 bg-[#1e1e1e] rounded-full"></span
+                >Project Management</span
+              >
+              <span class="flex items-center gap-2"
+                ><span class="w-1.5 h-1.5 bg-[#1e1e1e] rounded-full"></span>Web
+                Development</span
+              >
+            </div>
           </div>
-          <h1 class="hero-name">Fathur Rahman Rafli</h1>
-          <div class="w-16 h-0.5 bg-[#1e1e1e] mt-4 mb-5"></div>
-          <p class="hero-sub text-balance max-w-2xl">
-            Information Systems Graduate —
-            <span class="font-medium"
-              >Turning business processes into structured digital
-              solutions.</span
-            >
-          </p>
-          <p class="mt-4 text-[#3f3f3f] max-w-xl text-base leading-relaxed">
-            Fresh graduate dengan pemahaman Project Management, pengembangan
-            &amp; pengujian sistem, administrasi proyek, dan analisis kebutuhan.
-          </p>
-          <div class="mt-8 flex flex-wrap gap-4">
-            <a href="#projects" class="btn-primary">Lihat Portofolio</a>
-            <a href="#contact" class="btn-outline">Hubungi Saya</a>
-          </div>
-          <div
-            class="mt-9 flex flex-wrap gap-6 text-xs font-medium text-[#4a4a4a] tracking-wide"
-          >
-            <span class="flex items-center gap-2"
-              ><span class="w-1.5 h-1.5 bg-[#1e1e1e] rounded-full"></span>System
-              Analysis</span
-            >
-            <span class="flex items-center gap-2"
-              ><span class="w-1.5 h-1.5 bg-[#1e1e1e] rounded-full"></span
-              >Project Management</span
-            >
-            <span class="flex items-center gap-2"
-              ><span class="w-1.5 h-1.5 bg-[#1e1e1e] rounded-full"></span>Web
-              Development</span
-            >
+          <!-- Hero Image -->
+          <div class="flex-shrink-0">
+            <div class="hero-image-placeholder">
+              <img
+                src="./assets/image/20260809_111453.jpg.jpeg"
+                alt=""
+                class="w-full h-full object-cover rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -129,13 +139,13 @@
             <div class="mt-4 space-y-2 text-sm text-[#4a4a4a]">
               <p>
                 <span class="font-medium text-[#1e1e1e]">Lokasi</span
-                ><br />Lumajang, Indonesia
+                ><br />Lumajang, Jawa Timur, Indonesia
               </p>
               <p>
                 <span class="font-medium text-[#1e1e1e]">Email</span><br /><a
-                  href="mailto:fathurrahmanrafli31@gmail.com"
+                  href="mailto:fathur.rahman.rafli.official@gmail.com"
                   class="contact-link"
-                  >fathurrahmanrafli31@gmail.com</a
+                  >fathur.rahman.rafli.official@gmail.com</a
                 >
               </p>
               <p>
@@ -203,7 +213,7 @@
 
       <div class="section-divider container-custom"></div>
 
-      <!-- PROJECTS -->
+      <!-- PROJECTS dengan gambar placeholder -->
       <section
         id="projects"
         class="py-8 md:py-12 container-custom fade-section"
@@ -213,76 +223,86 @@
         </h2>
         <div class="grid md:grid-cols-2 gap-8 mt-6">
           <!-- project 1 -->
-          <div class="project-card p-6 md:p-7 cursor-pointer" data-project="1">
-            <div class="flex items-start justify-between">
-              <span class="text-xs font-medium text-[#6b6b6b] tracking-wider"
-                >01</span
-              >
-              <span class="project-tag">Information System</span>
+          <div
+            class="project-card p-0 overflow-hidden cursor-pointer"
+            data-project="1"
+          >
+            <div class="project-img">
+              <img
+                src="./assets/image/Dashboard Inventory.png"
+                alt=""
+                class="w-full h-full object-cover rounded-lg"
+              />
             </div>
-            <h3 class="text-xl font-semibold mt-3">
-              Sistem Informasi Pengendalian Persediaan Barang
-            </h3>
-            <p class="text-sm text-[#4a4a4a] mt-1">
-              CV Anugerah Kencana Mandiri · Sep 2022 – Jan 2023
-            </p>
-            <p class="text-sm text-[#3a3a3a] mt-3 leading-relaxed">
-              Analisis proses bisnis aliran barang gudang, merancang prototype
-              sistem, dan presentasi hasil kepada direktur &amp; pegawai.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-1">
-              <span class="skill-tag text-[0.7rem]">Business Analysis</span>
-              <span class="skill-tag text-[0.7rem]">System Design</span>
-              <span class="skill-tag text-[0.7rem]">UI/UX Prototype</span>
-            </div>
-            <div class="mt-4 text-xs font-medium text-[#1e1e1e] opacity-70">
-              Klik untuk detail →
-            </div>
-            <div
-              class="mt-3 pt-3 border-t border-[#f0f0f0] text-xs text-[#6b6b6b] flex items-center gap-2"
-            >
-              <span class="inline-block w-3 h-3 bg-[#e8e8e8] rounded-sm"></span>
-              Preview prototype
+            <div class="p-6 md:p-7">
+              <div class="flex items-start justify-between">
+                <span class="text-xs font-medium text-[#6b6b6b] tracking-wider"
+                  >01</span
+                >
+                <span class="project-tag">Information System</span>
+              </div>
+              <h3 class="text-xl font-semibold mt-3">
+                Sistem Informasi Pengendalian Persediaan Barang
+              </h3>
+              <p class="text-sm text-[#4a4a4a] mt-1">
+                CV Anugerah Kencana Mandiri · Sep 2022 – Jan 2023
+              </p>
+              <p class="text-sm text-[#3a3a3a] mt-3 leading-relaxed">
+                Analisis proses bisnis aliran barang gudang, merancang prototype
+                sistem, dan presentasi hasil kepada direktur &amp; pegawai.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-1">
+                <span class="skill-tag text-[0.7rem]">Business Analysis</span>
+                <span class="skill-tag text-[0.7rem]">System Design</span>
+                <span class="skill-tag text-[0.7rem]">UI/UX Prototype</span>
+              </div>
+              <div class="mt-4 text-xs font-medium text-[#1e1e1e] opacity-70">
+                Klik untuk detail →
+              </div>
             </div>
           </div>
 
           <!-- project 2 -->
-          <div class="project-card p-6 md:p-7 cursor-pointer" data-project="2">
-            <div class="flex items-start justify-between">
-              <span class="text-xs font-medium text-[#6b6b6b] tracking-wider"
-                >02</span
-              >
-              <span class="project-tag">Web Development</span>
+          <div
+            class="project-card p-0 overflow-hidden cursor-pointer"
+            data-project="2"
+          >
+            <div class="project-img">
+              <span class="label">Preview Project 02</span>
             </div>
-            <h3 class="text-xl font-semibold mt-3">
-              Sistem Informasi Penjualan Buah
-            </h3>
-            <p class="text-sm text-[#4a4a4a] mt-1">
-              PT Sata Harum · Sep 2023 – Agu 2024
-            </p>
-            <p class="text-sm text-[#3a3a3a] mt-3 leading-relaxed">
-              Analisis bisnis proses pemesanan buah, wawancara dengan Manager
-              Farm, perancangan sistem &amp; kode program berbasis web.
-            </p>
-            <div class="mt-4 flex flex-wrap gap-1">
-              <span class="skill-tag text-[0.7rem]">Business Analysis</span>
-              <span class="skill-tag text-[0.7rem]">Requirement Analysis</span>
-              <span class="skill-tag text-[0.7rem]">Web Development</span>
-            </div>
-            <div class="mt-4 text-xs font-medium text-[#1e1e1e] opacity-70">
-              Klik untuk detail →
-            </div>
-            <div
-              class="mt-3 pt-3 border-t border-[#f0f0f0] text-xs text-[#6b6b6b] flex items-center gap-2"
-            >
-              <span class="inline-block w-3 h-3 bg-[#e8e8e8] rounded-sm"></span>
-              Preview sistem
+            <div class="p-6 md:p-7">
+              <div class="flex items-start justify-between">
+                <span class="text-xs font-medium text-[#6b6b6b] tracking-wider"
+                  >02</span
+                >
+                <span class="project-tag">Web Development</span>
+              </div>
+              <h3 class="text-xl font-semibold mt-3">
+                Sistem Informasi Penjualan Buah
+              </h3>
+              <p class="text-sm text-[#4a4a4a] mt-1">
+                PT Sata Harum · Sep 2023 – Agu 2024
+              </p>
+              <p class="text-sm text-[#3a3a3a] mt-3 leading-relaxed">
+                Analisis bisnis proses pemesanan buah, wawancara dengan Manager
+                Farm, perancangan sistem &amp; kode program berbasis web.
+              </p>
+              <div class="mt-4 flex flex-wrap gap-1">
+                <span class="skill-tag text-[0.7rem]">Business Analysis</span>
+                <span class="skill-tag text-[0.7rem]"
+                  >Requirement Analysis</span
+                >
+                <span class="skill-tag text-[0.7rem]">Web Development</span>
+              </div>
+              <div class="mt-4 text-xs font-medium text-[#1e1e1e] opacity-70">
+                Klik untuk detail →
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- WORKING APPROACH (mini) -->
+      <!-- WORKING APPROACH -->
       <section class="py-6 md:py-10 container-custom fade-section">
         <h2 class="section-title text-xl md:text-2xl">
           Cara Saya <span class="section-title-light">Bekerja</span>
@@ -321,7 +341,7 @@
 
       <div class="section-divider container-custom"></div>
 
-      <!-- EXPERIENCE ORGANISASI -->
+      <!-- EXPERIENCE ORGANISASI dengan foto placeholder -->
       <section
         id="experience"
         class="py-8 md:py-12 container-custom fade-section"
@@ -330,33 +350,43 @@
           Pengalaman <span class="section-title-light">Organisasi</span>
         </h2>
         <div class="max-w-3xl">
-          <div class="timeline-item">
-            <div class="org-role">Ketua Divisi Keilmuan</div>
-            <div class="org-name">
-              Himpunan Mahasiswa Sistem Informasi UTY (HMSI UTY)
+          <div
+            class="timeline-item flex flex-col md:flex-row md:items-start gap-4 md:gap-6"
+          >
+            <div class="org-img flex-shrink-0">
+              <img
+                src="./assets/image/Logo HMSI.jpg.jpeg"
+                alt="Himpunan Mahasiswa Sistem Informasi UTY (HMSI UTY)"
+              />
             </div>
-            <div class="text-sm text-[#5a5a5a] mt-0.5">
-              September 2022 – September 2023
+            <div>
+              <div class="org-role">Ketua Divisi Keilmuan</div>
+              <div class="org-name">
+                Himpunan Mahasiswa Sistem Informasi UTY (HMSI UTY)
+              </div>
+              <div class="text-sm text-[#5a5a5a] mt-0.5">
+                September 2022 – September 2023
+              </div>
+              <ul
+                class="mt-3 space-y-2 text-sm text-[#2d2d2d] list-disc list-outside pl-4 marker:text-[#888]"
+              >
+                <li>
+                  Panitia koordinator bus untuk peserta Sistem Informasi &amp;
+                  Teknik Informatika ke Jakarta, bekerja sama dengan HIMATIKA
+                  mengunjungi Trans 7, PT Indivara, dan Jakarta Smart City.
+                </li>
+                <li>
+                  Panitia Dies Natalis HMSI ke-9: menyusun rundown, memastikan
+                  kelancaran acara, menjaga citra organisasi di hadapan tamu
+                  undangan.
+                </li>
+                <li>
+                  Panitia studi banding dengan Himpunan Mahasiswa Sistem
+                  Informasi Telkom Purwokerto: menyusun rundown dan memastikan
+                  kelancaran acara.
+                </li>
+              </ul>
             </div>
-            <ul
-              class="mt-3 space-y-2 text-sm text-[#2d2d2d] list-disc list-outside pl-4 marker:text-[#888]"
-            >
-              <li>
-                Panitia koordinator bus untuk peserta Sistem Informasi &amp;
-                Teknik Informatika ke Jakarta, bekerja sama dengan HIMATIKA
-                mengunjungi Trans 7, PT Indivara, dan Jakarta Smart City.
-              </li>
-              <li>
-                Panitia Dies Natalis HMSI ke-9: menyusun rundown, memastikan
-                kelancaran acara, menjaga citra organisasi di hadapan tamu
-                undangan.
-              </li>
-              <li>
-                Panitia studi banding dengan Himpunan Mahasiswa Sistem Informasi
-                Telkom Purwokerto: menyusun rundown dan memastikan kelancaran
-                acara.
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -423,9 +453,9 @@
           <div class="mt-6 space-y-2 text-sm">
             <p>
               <span class="font-medium">Email</span><br /><a
-                href="mailto:fathurrahmanrafli31@gmail.com"
+                href="mailto:fathur.rahman.rafli.official@gmail.com"
                 class="contact-link"
-                >fathurrahmanrafli31@gmail.com</a
+                >fathur.rahman.rafli.official@gmail.com</a
               >
             </p>
             <p>
@@ -444,11 +474,14 @@
               >
             </p>
             <p>
-              <span class="font-medium">Lokasi</span><br />Yogyakarta, Indonesia
+              <span class="font-medium">Lokasi</span><br />Lumajang, Jawa Timur,
+              Indonesia
             </p>
           </div>
           <div class="mt-8 flex flex-wrap gap-4">
-            <a href="mailto:fathurrahmanrafli31@gmail.com" class="btn-primary"
+            <a
+              href="mailto:fathur.rahman.rafli.official@gmail.com"
+              class="btn-primary"
               >Hubungi Saya</a
             >
             <a
@@ -500,9 +533,7 @@
             &times;
           </button>
         </div>
-        <div id="modalBody" class="space-y-3 text-sm text-[#1f1f1f]">
-          <!-- dinamis -->
-        </div>
+        <div id="modalBody" class="space-y-3 text-sm text-[#1f1f1f]"></div>
       </div>
     </div>
 

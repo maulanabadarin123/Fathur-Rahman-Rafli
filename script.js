@@ -1,5 +1,4 @@
 (function () {
-  // ---- menu mobile ----
   const menuToggle = document.getElementById("menuToggle");
   const mobileMenu = document.getElementById("mobileMenu");
   menuToggle.addEventListener("click", function (e) {
@@ -7,7 +6,6 @@
     this.classList.toggle("open");
     mobileMenu.classList.toggle("open");
   });
-  // close mobile menu on link click
   document.querySelectorAll(".mobile-menu a").forEach((link) => {
     link.addEventListener("click", () => {
       menuToggle.classList.remove("open");
@@ -15,7 +13,6 @@
     });
   });
 
-  // ---- smooth scroll & nav active ----
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link, .mobile-menu a");
   function updateActive() {
@@ -34,7 +31,6 @@
   window.addEventListener("scroll", updateActive);
   window.addEventListener("load", updateActive);
 
-  // ---- project data ----
   const projects = {
     1: {
       title: "Sistem Informasi Pengendalian Persediaan Barang",
@@ -64,7 +60,6 @@
     },
   };
 
-  // ---- modal ----
   const modal = document.getElementById("projectModal");
   const modalTitle = document.getElementById("modalTitle");
   const modalBody = document.getElementById("modalBody");
@@ -110,7 +105,6 @@
     if (e.key === "Escape") closeModal();
   });
 
-  // ---- fade-in on scroll (intersection) ----
   const fadeEls = document.querySelectorAll(".fade-section");
   const observer = new IntersectionObserver(
     (entries) => {
@@ -123,7 +117,6 @@
     { threshold: 0.08 },
   );
   fadeEls.forEach((el) => observer.observe(el));
-  // force visible if already visible
   setTimeout(() => {
     fadeEls.forEach((el) => {
       const rect = el.getBoundingClientRect();
