@@ -28,6 +28,8 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
+    <!-- Feather Icons (ringan, hanya 4kb) -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -442,7 +444,7 @@
 
       <div class="section-divider container-custom"></div>
 
-      <!-- CONTACT -->
+      <!-- CONTACT dengan ICON -->
       <section id="contact" class="py-8 md:py-14 container-custom fade-section">
         <div class="max-w-2xl">
           <h2 class="section-title">
@@ -454,46 +456,101 @@
             Terbuka untuk kesempatan kerja, project, kolaborasi, maupun diskusi
             mengenai pengembangan sistem dan teknologi.
           </p>
-          <div class="mt-6 space-y-2 text-sm">
-            <p>
-              <span class="font-medium">Email</span><br /><a
-                href="mailto:fathur.rahman.rafli.official@gmail.com"
-                class="contact-link"
-                >fathur.rahman.rafli.official@gmail.com</a
-              >
-            </p>
-            <p>
-              <span class="font-medium">Phone</span><br /><a
-                href="tel:+6285788315137"
-                class="contact-link"
-                >+62 857-8831-5137</a
-              >
-            </p>
-            <p>
-              <span class="font-medium">LinkedIn</span><br /><a
-                href="https://linkedin.com/in/fathur-rahman-rafli/"
-                target="_blank"
-                class="contact-link"
-                >linkedin.com/in/fathur-rahman-rafli/</a
-              >
-            </p>
-            <p>
-              <span class="font-medium">Lokasi</span><br />Lumajang, Jawa Timur,
-              Indonesia
-            </p>
+          <div class="mt-6 space-y-3 text-sm">
+            <!-- Email dengan icon -->
+            <div class="flex items-start gap-3">
+              <i
+                data-feather="mail"
+                class="w-5 h-5 text-[#4a4a4a] mt-0.5 flex-shrink-0"
+              ></i>
+              <div>
+                <span class="font-medium">Email</span><br />
+                <a
+                  href="mailto:fathur.rahman.rafli.official@gmail.com"
+                  class="contact-link"
+                >
+                  fathur.rahman.rafli.official@gmail.com
+                </a>
+              </div>
+            </div>
+            <!-- Phone dengan icon -->
+            <div class="flex items-start gap-3">
+              <i
+                data-feather="phone"
+                class="w-5 h-5 text-[#4a4a4a] mt-0.5 flex-shrink-0"
+              ></i>
+              <div>
+                <span class="font-medium">Phone</span><br />
+                <a href="tel:+6285788315137" class="contact-link"
+                  >+62 857-8831-5137</a
+                >
+              </div>
+            </div>
+            <!-- LinkedIn dengan icon -->
+            <div class="flex items-start gap-3">
+              <i
+                data-feather="linkedin"
+                class="w-5 h-5 text-[#4a4a4a] mt-0.5 flex-shrink-0"
+              ></i>
+              <div>
+                <span class="font-medium">LinkedIn</span><br />
+                <a
+                  href="https://linkedin.com/in/fathur-rahman-rafli/"
+                  target="_blank"
+                  class="contact-link"
+                >
+                  linkedin.com/in/fathur-rahman-rafli/
+                </a>
+              </div>
+            </div>
+            <!-- WhatsApp dengan icon -->
+            <div class="flex items-start gap-3">
+              <i
+                data-feather="message-circle"
+                class="w-5 h-5 text-[#4a4a4a] mt-0.5 flex-shrink-0"
+              ></i>
+              <div>
+                <span class="font-medium">WhatsApp</span><br />
+                <a
+                  href="https://wa.me/6285788315137"
+                  target="_blank"
+                  class="contact-link"
+                >
+                  +62 857-8831-5137
+                </a>
+              </div>
+            </div>
+            <!-- Lokasi dengan icon -->
+            <div class="flex items-start gap-3">
+              <i
+                data-feather="map-pin"
+                class="w-5 h-5 text-[#4a4a4a] mt-0.5 flex-shrink-0"
+              ></i>
+              <div>
+                <span class="font-medium">Lokasi</span><br />
+                Lumajang, Jawa Timur, Indonesia
+              </div>
+            </div>
           </div>
           <div class="mt-8 flex flex-wrap gap-4">
             <a
               href="mailto:fathur.rahman.rafli.official@gmail.com"
               class="btn-primary"
-              >Hubungi Saya</a
             >
+              <i data-feather="mail" class="w-4 h-4 inline mr-2 -mt-0.5"></i>
+              Hubungi Saya
+            </a>
             <a
               href="https://wa.me/6285788315137"
               target="_blank"
               class="btn-outline"
-              >WhatsApp</a
             >
+              <i
+                data-feather="message-circle"
+                class="w-4 h-4 inline mr-2 -mt-0.5"
+              ></i>
+              WhatsApp
+            </a>
           </div>
         </div>
       </section>
@@ -542,5 +599,9 @@
     </div>
 
     <script src="script.js"></script>
+    <!-- Inisialisasi Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
   </body>
 </html>
